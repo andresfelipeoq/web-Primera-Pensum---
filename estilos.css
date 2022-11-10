@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Entrega Clase FRONT END - 202110-B1 - B02 */
+:root{
+    --purple-dark: #170312;
+    --purple-medium: #060333;
+    --purple-light: #0a676e;
+    --gray-ligth: #eaeaea;
+    --white: #f4fffd;
+}
+
+body{
+    font-size: 20px;
+    font-family: 'open sans' , sans-serif;
+}
+
+p{
+    font-size: 22px;
+}
+
+/* header */
+.contenido-header{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg-FONDO.jpg) ;
+    background-position: center ;
+    background-size: cover ;
+    background-attachment: fixed; 
+}
+.contenido-header .fondo {
+    width: 100%;
+    height: 100%;
+    
+   /* background-image: url(../img/bg-FONDOTRASPA.jpg);*/
+}
+*/ /*aqui deja pequeña la imagen de fondo */
+
+
+.contenido-header .texto{
+    width: 100%;
+    height: 100vh;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: 'Noto Serif', serif;
+    font-style: itali;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dfee0d;
+    mix-blend-mode: multiply;
+}
+
+/* NAVBAR */
+
+.menu{
+    background-color: var(--purple-light);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Serif',serif;
+    font-style: italic;
+    margin-bottom: 60px;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 10px 130px;
+    font-size: 26px;
+    background-color: var(--purple-medium);
+    margin: 0 10px;
+    transition: .5s ease all;
+    color: var(--gray-ligth);
+    text-decoration: none;
+}
+
+.menu a:hover{
+    transform: translateY(18px);
+    background-color: var(--purple-light);
+}
+
+
+/* nosotros */
+
+.Inicio {
+    margin-bottom: 60px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: var(--purple-dark);
+    font-family: ''Noto Serif , serif;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo span {
+    background-color: var(--gray-ligth);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;
+}
+
+.subtitulo::after {
+    content:"" ;
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: var(--purple-dark);
+    position: relative;
+    top: -29px;
+    z-index: 1;
+}
+
+.Inicio .titulo {
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.Inicio .enlace {
+    display: inline-block;
+    margin-top: 40px;
+    color: var(--purple-light);
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: .3s ease all;
+}
+
+
+.Inicio .enlace {
+    text-decoration: none;
+    letter-spacing: 3px;
+    border-bottom: 1px solid var(--purple-light);
+}
+
+/* temas */
+
+.temas {
+    background: var(--gray-ligth);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.temas .titulo {
+    width: 70%;
+    font-size: 34px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.temas .temas {
+    position: relative;
+    width: 100%;
+}
+/* 
+.temas .overlay {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--gray-ligth);
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.temas .temas:hover:hover .overlay {
+    width: 100%;
+    opacity: .8;
+
+}
+
+.temas .temas .overlay-texto {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: var(black);
+    font-size: 18px;
+    transform: translate(-30%,-30%);
+    overflow: hidden;
+    border-top: 1px solid rgb(29, 27, 27);
+    border-bottom: 1px solid rgb(24, 22, 22);
+}
+*/
+
+/* separador */
+
+.separador {
+    width: 100;
+    height: 250;
+    background-image: url('../img/bg-FONDO2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 1000;
+}
+
+.separador p {
+    height: 100%;
+    width: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-family: 'Noto Serif',serif;
+    padding: 10px;
+
+}
+
+.separador1 {
+    width: 100;
+    height: 250;
+    background-image: url('../img/bg-FONDO2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+/* Acerca de */
+
+.Acerca De {
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 992px);{
+    p{
+      font-size: 18px;
+    }
+    .contenido-header .texto{
+        font-size: 60px;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .Inicio .titulo,
+    .Acerca De {
+        font-size: 30px;
+    }
+    
+}
+  
